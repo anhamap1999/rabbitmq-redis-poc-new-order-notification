@@ -1,0 +1,1 @@
+# rabbitmq-redis-poc-new-order-notification
