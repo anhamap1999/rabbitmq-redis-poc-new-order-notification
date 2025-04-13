@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "start": "nest start",
+    "start:dev": "nest start --watch"
+  },
+  "dependencies": {
+    "@keyv/redis": "^4.3.3",
+    "@nestjs/cache-manager": "^3.0.1",
+    "@nestjs/common": "^11.0.13",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^11.0.13",
+    "@nestjs/microservices": "^11.0.13",
+    "@nestjs/platform-express": "^11.0.13",
+    "amqp-connection-manager": "^4.1.14",
+    "cache-manager": "^6.4.2",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.6"
+  }
+}

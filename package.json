@@ -1,0 +1,34 @@
+{
+  "name": "rabbitmq-redis-poc-new-order-notification",
+  "version": "1.0",
+  "type": "module",
+  "scripts": {
+    "migrate-db": "npx prisma format && npx prisma migrate dev --name init && npx prisma generate",
+    "seed-db": "npx prisma db seed",
+    "start-order-service": "cd ./src/order && yarn start",
+    "start-notification-service": "cd ./src/notification/ && yarn start"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.6.0",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.0",
+    "amqplib": "^0.10.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "prisma": "^6.6.0",
+    "redis": "^4.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.7",
+    "tsx": "^4.19.3"
+  },
+  "prisma": {
+    "seed": "tsx src/shared/prisma/seed.ts"
+  },
+  "engines": {
+    "node": ">=20.11.1"
+  }
+}

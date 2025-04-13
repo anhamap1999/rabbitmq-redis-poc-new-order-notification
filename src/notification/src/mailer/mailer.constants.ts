@@ -1,0 +1,1 @@
+export const MAILER_SERVICE_TOKEN = 'MAILER_SERVICE';
